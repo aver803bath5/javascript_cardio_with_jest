@@ -1,0 +1,14 @@
+{
+  "name": "javascript_cardio",
+  "version": "1.0.0",
+  "description": "JavaScript cardio and TDD practices",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "g9Mien",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
