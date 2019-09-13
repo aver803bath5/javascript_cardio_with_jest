@@ -9,7 +9,7 @@ function flattenArray(arr) {
     const next = stack.pop();
     if (Array.isArray(next)) {
       // Push back items, won't modify the original input.
-      stack.push(next);
+      stack.push(...next);
     } else {
       res.push(next);
     }
