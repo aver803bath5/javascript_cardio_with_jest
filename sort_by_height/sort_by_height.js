@@ -50,10 +50,12 @@ function sortByHeight(arr) {
   const treePosArr = [];
   const peopleHeightArr = [];
 
+  // Get tree pos and people heights from arr
   arr.forEach((val, index) => (val === -1 ? treePosArr.push(index) : peopleHeightArr.push(val)));
 
   const sortedArr = peopleHeightArr.sort((firstEl, secondEl) => firstEl - secondEl);
 
+  // Insert tree into sotedArr
   treePosArr.forEach((_, index) => sortedArr.splice(treePosArr[index], 0, -1));
 
   return sortedArr;
